@@ -5,17 +5,20 @@
   "main": "index.js",
   "scripts": {
     "dev": "lite-server",
+	"zokrates" : "node zokrates/verifierGenerator.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "pk <pkrasam@gmail.com> (https://ipfs.infura.io/ipfs/QmSXiR9Khm3yo1J67nUopvVBxFJ8YGN2fUGZ34Etr3m92x/)",
   "license": "MIT",
   "devDependencies": {
-    "lite-server": "2.4.0"
+    "@openzeppelin/contracts": "^4.3.2",
+    "lite-server": "",
+    "truffle": "^5.4.15",
+    "zokrates-js": "^1.0.36"
   },
   "dependencies": {
-    "openzeppelin-solidity": "^2.2.0",
-    "solc": "^0.5.2",
-    "solc-js": "^0.5.2"
+    "solc": "",
+    "solc-js": ""
   }
 }

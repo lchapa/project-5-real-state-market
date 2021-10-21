@@ -1,0 +1,19 @@
+{
+  "inputs": [
+    {
+      "name": "providing_key",
+      "public": false,
+      "type": "field"
+    },
+    {
+      "name": "verification_key",
+      "public": true,
+      "type": "field"
+    }
+  ],
+  "outputs": [
+    {
+      "type": "field"
+    }
+  ]
+}
