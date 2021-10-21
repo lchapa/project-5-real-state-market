@@ -64,7 +64,7 @@ contract SolnSquareVerifier is CustomERC721Token {
 	    uint256 solutionIndex = solutions[solHash].index;
 	    require(solutionsMinted[solutionIndex] == false, "Solution was already minted");
 	    
-	    super.mint(msg.sender, solutionIndex, "testTikenURI");
+	    super.mint(msg.sender, solutionIndex, "testTokenURI");
 	    
 	    solutionsMinted[solutionIndex] = true;
 	}
