@@ -50,12 +50,12 @@ contract Pausable is Ownable {
 
 	//  4) create 'whenNotPaused' & 'paused' modifier that throws in the appropriate situation
 	modifier whenNotPaused() {
-		require(_paused == false, "Contract is NOT currently paused");
+		require(_paused == false, "Contract is currently paused");
 		_;    
 	}
 
 	modifier paused() {
-		require(_paused == true, "Contract is currently paused");
+		require(_paused == true, "Contract is NOT currently paused");
 		_;    
 	}	
 
@@ -212,7 +212,7 @@ contract ERC721 is Pausable, ERC165 {
     }
 
     function transferFrom(address from, address to, uint256 tokenId) public {
-        require(_isApprovedOrOwner(msg.sender, tokenId));
+        require(_isApprovedOrOwner(msg.sender, tokenId), "Sender is not authorized to transfer this token");
 
         _transferFrom(from, to, tokenId);
     }
