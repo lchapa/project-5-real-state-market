@@ -25,15 +25,15 @@ Once you have checked out this project to your local computer, please follow the
 4. `truffle test --network ganache` to execute the tests developed for this project on ganache.
 5. `truffle migrate --network rinkeby` to migrate and deploy smart contract to test network.
 
-Once your smart contracts has been deployed, please navigate to:
 
-- [Contract owner account](https://rinkeby.opensea.io/accounts/0xFEAf61c1814b9342C1533115523bB96458744fb7) to see on the test OpenSea network the contents for this account. 
+## **OpenSea Market** (test environment)
+
+Once your smart contracts has been deployed, please navigate to the above link in order to see the items minted and listed:
+
+- [Tokens enumerated in the market](https://rinkeby.opensea.io/accounts/0xFEAf61c1814b9342C1533115523bB96458744fb7) to see on the test OpenSea network the contents for this account. 
 
 ![Account on OpenSea test](img/AccountOpenSeaTest.png)
 
-- [Enumerate tokens](https://testnets.opensea.io/assets/0x0726d5C1fe7F57900C9a7D2fbF05621b67FFf65d/1) to see on the test OpenSea network the tokens minted in this smart contract. 
-
-![Tokens on OpenSea test](img/EnumerateOpenSeaTest.png)
 
 ## Addresses
 
@@ -55,4 +55,4 @@ This account could not buy, but the owner could transfer to it [Transfered](http
 SPDX-License-Identifier: MIT
 
 ### Contact
-Luis Chapa: luis.chapa@hotmail.com
+Luis Chapa: luischapam@hotmail.com
