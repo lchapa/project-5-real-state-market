@@ -52,21 +52,20 @@ By following the above accounts you can see the transactions history:
 
 ### **Verifier**
 
-This contract is the one with zkSNARK solution compiled by **Zocrates**. Once deployed the address is taken and then:
-
-| Syntax | Description |
+| Verifier | This contract is the one with zkSNARK solution compiled by **Zocrates**. |
 | ----------- | ----------- |
-| Header | Title |
-| Paragraph | Text |
-
-- Address Rinkeby: [0x91e929aBC05d7993FCc823246134d47390950Ec0](https://rinkeby.etherscan.io/address/0x91e929aBC05d7993FCc823246134d47390950Ec0)
-- ABI: [Verifier.json](build/contracts/Verifier.json)
+| Address Rinkeby | [0x91e929aBC05d7993FCc823246134d47390950Ec0](https://rinkeby.etherscan.io/address/0x91e929aBC05d7993FCc823246134d47390950Ec0) |
+| ABI | [Verifier.json](build/contracts/Verifier.json) |
 
 ### **Solution**
 
-- Address Rinkeby: [0x0726d5C1fe7F57900C9a7D2fbF05621b67FFf65d](https://rinkeby.etherscan.io/address/0x0726d5C1fe7F57900C9a7D2fbF05621b67FFf65d)
+| Solution | This contract takes the solution in, and validates in the Verifier contract. |
+| ----------- | ----------- |
+| Address Rinkeby | [0x0726d5C1fe7F57900C9a7D2fbF05621b67FFf65d](https://rinkeby.etherscan.io/address/0x0726d5C1fe7F57900C9a7D2fbF05621b67FFf65d) |
+| ABI | [SolnSquareVerifier.json](build/contracts/SolnSquareVerifier.json) |
 
-... is deployed with a reference to **Verifier**, then ready to process and validate solutions.
+
+## Migrations and minting.
 
 In the [migrations script](migrations/2_deploy_contracts.js), rigth away the deployments, 3 tokens are:
 
@@ -74,6 +73,7 @@ In the [migrations script](migrations/2_deploy_contracts.js), rigth away the dep
 - Added to solutions array
 - Minted for being available to transaction through **OpenSea Market Place**.
 
+Also...
 
 
 ### License of the project
