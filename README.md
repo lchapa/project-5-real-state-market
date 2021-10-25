@@ -50,11 +50,21 @@ By following the above accounts you can see the transactions history:
 
 ## Contract Addresses
 
-- **Verifier**: [0x91e929aBC05d7993FCc823246134d47390950Ec0](https://rinkeby.etherscan.io/address/0x91e929aBC05d7993FCc823246134d47390950Ec0)
+### **Verifier**
 
 This contract is the one with zkSNARK solution compiled by **Zocrates**. Once deployed the address is taken and then:
 
-- **Solution**: [0x0726d5C1fe7F57900C9a7D2fbF05621b67FFf65d](https://rinkeby.etherscan.io/address/0x0726d5C1fe7F57900C9a7D2fbF05621b67FFf65d)
+| Syntax | Description |
+| ----------- | ----------- |
+| Header | Title |
+| Paragraph | Text |
+
+- Address Rinkeby: [0x91e929aBC05d7993FCc823246134d47390950Ec0](https://rinkeby.etherscan.io/address/0x91e929aBC05d7993FCc823246134d47390950Ec0)
+- ABI: [Verifier.json](build/contracts/Verifier.json)
+
+### **Solution**
+
+- Address Rinkeby: [0x0726d5C1fe7F57900C9a7D2fbF05621b67FFf65d](https://rinkeby.etherscan.io/address/0x0726d5C1fe7F57900C9a7D2fbF05621b67FFf65d)
 
 ... is deployed with a reference to **Verifier**, then ready to process and validate solutions.
 
