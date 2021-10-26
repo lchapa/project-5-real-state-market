@@ -12,6 +12,9 @@ let compile = () => {
 
 	    // run setup
 	    const keypair = zokratesProvider.setup(artifacts.program);
+	    fs.writeFileSync(__dirname + '/proving.key', new Uint8Array(keypair.pk), {
+	    	encoding: 'utf8'
+	    });
 
 	    // export solidity verifier
 	    const verifier = zokratesProvider.exportSolidityVerifier(keypair.vk, "v1");

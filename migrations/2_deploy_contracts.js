@@ -40,14 +40,12 @@ module.exports = function(deployer, network, accounts) {
 	} else if(network === 'ganache') { // GANACHE local one
 		let name = 'Real State NFT GANACHE';
 		let symbol = 'REAG';
-		initialMint(name, symbol);
+		initialMint(name, symbol);		
 		deployer.deploy(CustomERC721Token, name, symbol);				
 	} else { // DEVELOPMENT also local
 		let name = 'Real State NFT DEVELOPMENT';
 		let symbol = 'READ';
-		deployer.deploy(SquareVerifier).then(instance => {
-			deployer.deploy(SolnSquareVerifier, name, symbol, instance.address);
-		});
+		initialMint(name, symbol);
 		deployer.deploy(CustomERC721Token, name, symbol);		
 	}
 };
