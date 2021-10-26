@@ -30,7 +30,7 @@ Once you have checked out this project to your local computer, please follow the
 
 Once your smart contracts has been deployed, please navigate to the below link in order to see the items minted and listed:
 
-- [Tokens enumerated in the market](https://testnets.opensea.io/collection/real-state-nft) to see on the test OpenSea network the contents for this account. 
+- [Tokens enumerated in the market](https://testnets.opensea.io/collection/real-state-nft-v2) to see on the test OpenSea network the contents for this account. 
 
 ![Account on OpenSea test](img/AccountOpenSeaTest.png)
 
