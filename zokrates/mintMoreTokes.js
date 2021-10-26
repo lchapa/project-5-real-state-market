@@ -13,7 +13,7 @@ const activeNetwork = 'RinkeBy';
 const network = {
 	"RinkeBy": {
 		"url": "https://rinkeby.infura.io/v3/8d9ba0d42a024ca88c6f29723ff61446",
-		"solutionsAddress": ""
+		"solutionsAddress": "0x766e39C1913f82694e9A9EA74F535cB845377c47"
 	},
 	"localhost": {
 		"url": "http://localhost:8545",

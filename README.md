@@ -65,7 +65,7 @@ By following the above accounts you can see the transactions history:
 | ABI | [SolnSquareVerifier.json](build/contracts/SolnSquareVerifier.json) |
 
 
-## Migrations and minting.
+## Migrations.
 
 In the [migrations script](migrations/2_deploy_contracts.js), rigth away the deployments, 3 tokens are:
 
@@ -73,7 +73,9 @@ In the [migrations script](migrations/2_deploy_contracts.js), rigth away the dep
 - Added to solutions array
 - Minted for being available to transaction through **OpenSea Market Place**.
 
-Also...
+## Post deployment Minting more tokens and validated by Zokrates
+
+There is one node.js module @ [mintMoreTokes.js](zokrates/mintMoreTokes.js) that can be used as base solution for another app that would be in charge of gathering all parameters, execute all processes and then, generate the corresponding **proof** with the proving key used in the Verifier smart contract, then more token can be added after deployment.
 
 
 ### License of the project
