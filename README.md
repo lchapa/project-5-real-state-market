@@ -36,7 +36,8 @@ Once your smart contracts has been deployed, please navigate to the below link i
 
 ## Transactions on Opensea
 
-- **Buyer account**: [0x77331ea4a5fE2A5897381378E6f19752fce0377e](https://rinkeby.etherscan.io/address/0x77331ea4a5fE2A5897381378E6f19752fce0377e)
+- **Buyer#1 account**: [0x77331ea4a5fE2A5897381378E6f19752fce0377e](https://rinkeby.etherscan.io/address/0x77331ea4a5fE2A5897381378E6f19752fce0377e)
+- **Buyer#2 account**: [0xDD24EF0E6235D863de7775Bc9265dD2630320e00](https://rinkeby.etherscan.io/address/0xDD24EF0E6235D863de7775Bc9265dD2630320e00)
 
 - **Owner account**: [0xFEAf61c1814b9342C1533115523bB96458744fb7](https://rinkeby.etherscan.io/address/0xfeaf61c1814b9342c1533115523bb96458744fb7)
 
@@ -76,6 +77,8 @@ In the [migrations script](migrations/2_deploy_contracts.js), rigth away the dep
 ## Post deployment Minting more tokens and validated by Zokrates
 
 There is one node.js module @ [mintMoreTokes.js](zokrates/mintMoreTokes.js) that can be used as base solution for another app that would be in charge of gathering all parameters, execute all processes and then, generate the corresponding **proof** with the proving key used in the Verifier smart contract, then more token can be added after deployment.
+
+Above mentioned script can be invoked like this: `npm run zocrates` just be sure you replace the params to different INPUT, otherwise it launches an error that states that token is already minted.
 
 
 ### License of the project
