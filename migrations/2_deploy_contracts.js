@@ -18,10 +18,10 @@ module.exports = function(deployer, network, accounts) {
 				for(let i = 0; i < proofsFor.total; i++) {
 					proofs.push(JSON.parse(fs.readFileSync(__dirname + '/../zokrates/proof' + proofsFor.inputs[i].a + proofsFor.inputs[i].b +'.json')));
 				}
-						
+				let owner = await solution.owner();
 				for(var p of proofs) {
-					await solution.addSolution(p.proof, p.inputs, {from: accounts[0]});
-					let result = await solution.mintNFT(p.inputs, {from: accounts[0]});
+					await solution.addSolution(p.proof, p.inputs, {from: owner});
+					let result = await solution.mintNFT(p.inputs, {from: owner});
 					result.logs.forEach(l => {
 	                	if(l.event === 'Transfer') {
 	                    	console.log("Minted TokenId:" + l.args.tokenId);

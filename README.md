@@ -54,14 +54,14 @@ By following the above accounts you can see the transactions history:
 
 | Verifier | This contract is the one with zkSNARK solution compiled by **Zocrates**. |
 | ----------- | ----------- |
-| Address Rinkeby | [0x91e929aBC05d7993FCc823246134d47390950Ec0](https://rinkeby.etherscan.io/address/0x91e929aBC05d7993FCc823246134d47390950Ec0) |
+| Address Rinkeby | [0x69baF3D52e2690c8e21B6d2F8457F5a3D6D36DE9](https://rinkeby.etherscan.io/address/0x69baF3D52e2690c8e21B6d2F8457F5a3D6D36DE9) |
 | ABI | [Verifier.json](build/contracts/Verifier.json) |
 
 ### **Solution**
 
 | Solution | This contract takes the solution in, and validates in the Verifier contract. |
 | ----------- | ----------- |
-| Address Rinkeby | [0x0726d5C1fe7F57900C9a7D2fbF05621b67FFf65d](https://rinkeby.etherscan.io/address/0x0726d5C1fe7F57900C9a7D2fbF05621b67FFf65d) |
+| Address Rinkeby | [0x766e39C1913f82694e9A9EA74F535cB845377c47](https://rinkeby.etherscan.io/address/0x766e39C1913f82694e9A9EA74F535cB845377c47) |
 | ABI | [SolnSquareVerifier.json](build/contracts/SolnSquareVerifier.json) |
 
 
